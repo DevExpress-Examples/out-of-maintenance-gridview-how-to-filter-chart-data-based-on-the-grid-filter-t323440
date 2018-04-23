@@ -1,0 +1,8 @@
+# GridView - How to filter Chart data based on the grid filter
+
+
+<p>This example illustrates how to display only those data rows in the <a href="https://documentation.devexpress.com/#AspNet/CustomDocument9972">Chart</a> extension, which are displayed in the <a href="https://documentation.devexpress.com/#AspNet/CustomDocument8998">GridView</a> extension according to its current filter state (e.g., see <a href="http://demos.devexpress.com/MVCxGridViewDemos/Filtering/FilterRow">Filter Row - ASP.NET MVC Extensions - Grid View Demo</a>). Unlike the approach illustrated in the <a href="https://www.devexpress.com/Support/Center/p/T177863">T177863 - ASPxGridView - How to make WebChartControl display only data that is visible in grid</a> code example (for the WebForms platform), we use filtering at the database level to display data in a Chart. Note that the sorting order is not retained in this scenario, but the performance is much better for large data sources. The key idea here is to use the <strong>CriteriaToWhereClauseHelper</strong> class method to convert the <a href="https://documentation.devexpress.com/#AspNet/DevExpressWebASPxGridView_FilterExpressiontopic">ASPxGridView.FilterExpression</a> property value to the database-specific filter query. Please review the <a href="https://www.devexpress.com/Support/Center/p/K18434">K18434 - How to convert the CriteriaOperator to the corresponding filter string in order to use it for building SQL queries or for filtering the DataView</a> and <a href="https://www.devexpress.com/Support/Center/p/A2921">A2921 - How to get a list of the data rows in a filtered grid</a> KB articles to learn more on this subject.</p>
+
+<br/>
+
+
