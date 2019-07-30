@@ -10,7 +10,7 @@
 <!-- default file list end -->
 # GridView - How to filter Chart data based on the grid filter
 <!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/t323440)**
+**[[Run Online]](https://codecentral.devexpress.com/t323440/)**
 <!-- run online end -->
 
 
