@@ -1,9 +1,0 @@
-@Html.DevExpress().Chart(settings => {
-    settings.Name = "Chart";
-    settings.CallbackRouteValues = new { Controller = "Home", Action = "ChartPartial" };
-    settings.Series.Add(new DevExpress.XtraCharts.Series("Products", DevExpress.XtraCharts.ViewType.Bar));
-    settings.Series[0].ArgumentDataMember = "ProductName";
-    settings.Series[0].ValueDataMembers[0] = "UnitPrice";
-    settings.Width = 1000;
-    settings.Height = 600;
-}).Bind(Model).GetHtml()
